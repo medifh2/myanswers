@@ -1,0 +1,14 @@
+#first_module.content:
+#  path: '/first'
+#  defaults:
+#    _controller: 'Drupal\answers\Controller\FirstController::content'
+#    _title: 'Hello world'
+#  requirements:
+#    _permission: 'access content'
+answers.settings:
+  path: '/admin/config/content/answers'
+  defaults:
+    _title: 'Answers'
+    _form: '\Drupal\answers\Form\AnswersSettings'
+  requirements:
+    _permission: 'administer content types'
